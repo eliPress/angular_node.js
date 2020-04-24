@@ -29,6 +29,10 @@ app.use(express.json());
 app.use('/api/users',users);
 
 
-app.listen(3000,()=>{
-    console.log('on 30000');
-})
+// app.listen(3000,()=>{
+//     console.log('on 30000');
+// })
+
+http.listen(process.env.PORT || 5000,()=>{
+  console.log("runing on 5000");
+});
